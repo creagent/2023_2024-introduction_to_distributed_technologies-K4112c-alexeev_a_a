@@ -10,10 +10,9 @@ Date of finished:
 
 ___
 
-1) Создание [deployment](lab2_deployment.yaml) с 2 репликами контейнера ifilyaninitmo/itdt-contained-frontend:master, установка переменных в эти реплики и создание сервиса для доступа к подам: 
-REACT_APP_USERNAME, REACT_APP_COMPANY_NAME: ``kubectl apply -f lab2_deployment.yaml``
-2) Получение имен созданных контейнеров: ``kubectl get pods``
-3) Запуск режима проброса портов: ``kubectl port-forward <pod_name> 3001:3000``
+1) Создан deployment с 2 контейнерами ifilyaninitmo/itdt-contained-frontend:master REACT_APP_USERNAME = '_testUserName', REACT_APP_COMPANY_NAME: = '_testCompanyName' kubectl apply -f lab2_deployment.yaml
+2) Получение имен созданных контейнеров: kubectl get pods
+3) Запуск режима проброса портов: kubectl port-forward frontend-deployment.. 3001:3000
 4) Смотрим через браузер веб-интерфейс:
 
 <img width="1225" alt="275289338-702bd6eb-f2d4-40a7-8e4b-83162c7f5d99-3" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/c4998314-f27a-4cb0-8e33-f8b68fcbae7b">
