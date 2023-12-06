@@ -13,8 +13,8 @@ ___
 2) Проверка работы CNI плагина Calico и количество нод командами:
 - ``kubectl get nodes``
 - ``kubectl get pods -n kube-system -l k8s-app=calico-node``
-<img width="564" alt="277394022-96ad93ea-283d-442a-a7f0-d14611bcade3" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/0d6ba8f2-0fcc-4476-8177-daf6d00d83e4">
 
+<img width="564" alt="286376678-0d6ba8f2-0fcc-4476-8177-daf6d00d83e4" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/4305f853-d7fc-40c9-b301-5d318c003277">
 
 Для проверки IPAM (IP Address Management), назначим метки узлам. Присвоем метку географического расположения: location=us-east и location=us-west, для соответсвующих нод.\
 ``kubectl label nodes <узел_1> location=us-east``\
@@ -26,20 +26,21 @@ ___
 5) Установим calicoctl: ``kubectl create -f calicoctl.yaml``
 6) Создадим IP пулы с помощью calicoctl в поде: ``kubectl exec -i -n kube-system calicoctl -- /calicoctl create -f - < ippool.yaml --allow-version-mismatch``
 7) Выводим информацию о IP пулах через calicoctl: ``kubectl exec -i -n kube-system calicoctl -- /calicoctl get ippool -o wide   --allow-version-mismatch``
-<img width="831" alt="281861694-8d090eb8-2ff8-42e5-be40-749788895ac7" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/cb2c19b1-b4cc-4a6e-8e2f-81944ed8dbd8">
+<img width="831" alt="286376888-cb2c19b1-b4cc-4a6e-8e2f-81944ed8dbd8" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/2d4819d2-0a6c-4008-a835-76116c75d37b">
 
 9) Открываем доступ к сервису Minikube: ``minikube service frontend-service``
 10) Пробрасываем порты сервиса на локальную машину: ``kubectl port-forward service/frontend-service 9090:9090``
-<img width="853" alt="281860575-f0a483cf-b5fe-40a6-83fb-343b2e674375" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/a4253042-d3ad-49ea-bf72-c38d154371f7">
+<img width="853" alt="281860575-f0a483cf-b5fe-40a6-83fb-343b2e674375-2" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/dbbb22b6-40fc-4b01-af7f-f1a0a23fde9f">
 
 11) Получим IP одного из контейнеров и пропингуем из другого:
 - ``kubectl get pods -o wide``
 - ``kubectl exec -it frontend-6844569ff8-7bcm9 -- /bin/sh``
 - ``ping 10.244.205.193``
-<img width="791" alt="281860385-b94631ee-d9c7-4bc6-88fe-322d65db36cb" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/af59b2b6-38c8-4a11-a1eb-86c73ef1eb8e">
+<img width="791" alt="286376987-af59b2b6-38c8-4a11-a1eb-86c73ef1eb8e" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/14025f1f-f41b-4a04-97ba-692a3d484843">
 
 ___
 
 ### Схема
 
-<img width="497" alt="282321193-1957143e-8e9c-4113-87e8-92941f7a0c9a" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/2fd54676-dc67-4c94-ba4d-247965188d53">
+<img width="497" alt="282321193-1957143e-8e9c-4113-87e8-92941f7a0c9a-2" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/81ebf59d-d18b-4d6c-b419-21f83d292e75">
+
