@@ -20,9 +20,10 @@ ___
 9) Создаем туннель между локальной машиной и Minikube кластером: ``minikube tunnel``
 10) Вход в веб приложение по FQDN используя HTTPS и проверка наличия сертификата: https://lab3.front.local
 
-<img width="670" alt="Снимок экрана 2023-12-06 в 22 51 44" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/c364eb72-5fd1-4d9f-bd82-802df30bca7f">
+<img width="670" alt="Снимок экрана 2023-12-06 в 22 51 44" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/36edc55b-68c9-4f77-bced-a376d4586d49">
 
-<img width="910" alt="277191386-0051622d-98c0-43c6-b405-d0a221ad1e17" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/a4b2afc2-8052-43f2-bed7-7789d581071e">
+<img width="910" alt="277191386-0051622d-98c0-43c6-b405-d0a221ad1e17-2" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/211d9295-1cbd-4a7a-8aae-6f6d3d92f3a9">
 
-![277192281-56d3a6bf-a277-4054-992b-d0a45442d3e4](https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/4bded671-b808-4404-b417-b0a0f76f5199)
+![277192281-56d3a6bf-a277-4054-992b-d0a45442d3e4-2](https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/755b2bbf-1aab-417b-84e9-3035a6ca755f)
+
 
