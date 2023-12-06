@@ -25,8 +25,7 @@ Minikube запустит одноузловой кластер Kubernetes, ис
 5) Получение кредов для входа в Vault: ``minikube kubectl -- logs vault``\
 Ищем строку с **Root Token**.
 6) Выполняем вход через открытый к сервису порт (п. 3-4) по адресу http://127.0.0.1:8200 и используя токен (п. 5)
-<img width="592" alt="275214360-85043c89-b55d-4c35-b4b3-1826adde2fac" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/9065762e-0358-4e7c-a2a8-d45b6caba37c">
-
+<img width="592" alt="275214360-85043c89-b55d-4c35-b4b3-1826adde2fac" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/41a2a43b-eac5-4ed7-b2f5-b698b8698633">
 
 ### Завершение
 1) Удаление пода: ``minikube kubectl -- delete pod vault``
@@ -36,5 +35,5 @@ Minikube запустит одноузловой кластер Kubernetes, ис
 ___
 
 ### Схема организации контейеров и сервисов
-<img width="544" alt="275220477-7fb9603b-22df-4112-a535-389047c59ac9" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/6ee25266-3b1a-4c19-b33e-a84c7d494717">\
+<img width="544" alt="275220477-7fb9603b-22df-4112-a535-389047c59ac9" src="https://github.com/creagent/2023_2024-introduction_to_distributed_technologies-K4112c-alexeev_a_a/assets/70636573/e7c6d739-f184-437f-934d-9255db8b015b">\
 [Ссылка](https://drive.google.com/file/d/1MSmhKQIfJY-x99AIIybmseJ_hT19m_Kw/view?usp=sharing) для редактирования схемы
